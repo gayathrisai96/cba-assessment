@@ -1,13 +1,15 @@
 
 #include <stdio.h>
-int main()
+void main()
 {
-    int firstNumber, secondNumber, sumOfTwoNumbers;
+    int firstNumber=10;
+    int secondNumber=10;
+    int sumOfTwoNumbers;
     
-    printf("Enter two integers: ");
+    //printf("Enter two integers: ");
 
     // Two integers entered by user is stored using scanf() function
-    scanf("%d %d", &firstNumber, &secondNumber);
+    //scanf("%d %d", &firstNumber, &secondNumber);
 
     // sum of two numbers in stored in variable sumOfTwoNumbers
     sumOfTwoNumbers = firstNumber + secondNumber;
@@ -15,5 +17,5 @@ int main()
     // Displays sum      
     printf("%d + %d = %d", firstNumber, secondNumber, sumOfTwoNumbers);
 
-    return 0;
+    
 }
