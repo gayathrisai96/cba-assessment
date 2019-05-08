@@ -1,13 +1,15 @@
 language: c
 sudo: false # only for faster builds
-compiler: 
-- clang
-- gcc
 script:
-- gcc gayathri.c 
- - ./gayathri
- - gcc deepi.c 
- - ./deepi
- - gcc supriya.c 
- - ./supriya
- 
+  - clang -coverage -O0 deepi.c -o deepi
+  - ./deepi
+  - gcov deepi.c
+  clang -coverage -O0 gayathri.c -o gayathri
+  - ./gayathri
+  - gcov gayathri.c
+  clang -coverage -O0 supriya.c -o supriya
+  - ./supriya
+  - gcov supriya.c
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
