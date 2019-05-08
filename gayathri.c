@@ -2,11 +2,10 @@
 
 int main()
 {
-    int i, j, N;
+    int i, j;
 
     
-    //printf("Enter number of rows: ");
-    //scanf("%d", &N);
+    
 
    
     for(i=1; i<=6; i++)
