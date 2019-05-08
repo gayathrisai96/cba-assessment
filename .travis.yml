@@ -1,0 +1,13 @@
+language: c
+sudo: false # only for faster builds
+compiler: 
+- clang
+- gcc
+script:
+- gcc -o gayathri gayathri.c 
+ - ./gayathri
+ - gcc -o deepi deepi.c 
+ - ./deepi
+ - gcc -o supriya supriya.c 
+ - ./supriya
+ 
