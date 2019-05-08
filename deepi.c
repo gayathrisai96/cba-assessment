@@ -5,8 +5,7 @@ int main()
 {
     int rows, i, j, space;
 
-    //printf("Enter number of rows: ");
-    //scanf("%d",&rows);
+    
 
     for(i=5; i>=1; --i)
     {
