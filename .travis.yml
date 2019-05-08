@@ -4,10 +4,10 @@ script:
   - clang -coverage -O0 deepi.c -o deepi
   - ./deepi
   - gcov deepi.c
-  clang -coverage -O0 gayathri.c -o gayathri
+  clang -coverage -O1 gayathri.c -o gayathri
   - ./gayathri
   - gcov gayathri.c
-  clang -coverage -O0 supriya.c -o supriya
+  clang -coverage -O2 supriya.c -o supriya
   - ./supriya
   - gcov supriya.c
 
