@@ -5,9 +5,9 @@ compiler:
 - gcc
 script:
 - gcc -o gayathri gayathri.c 
- - ./gayathri
+ - ./gayathri.c
  - gcc -o deepi deepi.c 
- - ./deepi
+ - ./deepi.c
  - gcc -o supriya supriya.c 
- - ./supriya
+ - ./supriya.c
  
